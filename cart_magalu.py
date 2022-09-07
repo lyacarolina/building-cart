@@ -1,16 +1,3 @@
-cart = []
-
- 
-id_user = input("Insira o id do usuário: ")
-id_product  = input("Insira o id do produto: ")
-price_product = float(input("Insira o preço do produto: "))
-quantity_product = int(input("Insira a quantidade de produto: "))
-
-item = [id_user, id_product, price_product, quantity_product]
-cart = add_item_cart(item, cart)
-print(cart)
-
-
 def add_item_cart(item, cart):
     cart.append(item)
     return cart
@@ -35,3 +22,19 @@ def remove_item_id(id_product):
             kd_id.remove()   
         else:
             print("Id não encontrado")
+            
+            
+
+cart = []
+
+id_user = input("Insira o id do usuário: ")
+id_product  = input("Insira o id do produto: ")
+price_product = float(input("Insira o preço do produto: "))
+quantity_product = int(input("Insira a quantidade de produto: "))
+
+item = [id_user, id_product, price_product, quantity_product]
+cart = add_item_cart(item, cart)
+print(cart)
+
+
+
